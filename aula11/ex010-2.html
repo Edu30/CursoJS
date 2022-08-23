@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <div id="res"></div>
+    <script>
+        var paiss = window.prompt('Escreva aqui o nome do seu pais de origem')
+        var resultado = document.getElementById('res')
+        resultado.innerHTML = `<p>Vivendo no pais ${paiss}</p>`
+        if (paiss == 'Brasil') {
+            resultado.innerHTML += '<p>Você é Brasileiro!</p>'
+        } else {
+            resultado.innerHTML += '<p>Você é Estrangeiro!</p>'
+    }    
+    </script>
+</body>
+</html>
