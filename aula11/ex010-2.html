@@ -17,7 +17,13 @@
             resultado.innerHTML += '<p>Você é Brasileiro!</p>'
         } else {
             resultado.innerHTML += '<p>Você é Estrangeiro!</p>'
-    }    
+    }
+        /*//Outra forma de fazer usando operador ternário
+        var paiss = window.prompt('Escreva aqui o nome do seu pais de origem')
+        var resultado = document.getElementById('res')
+        resultado.innerHTML = `<p>Vivendo no pais ${paiss}</p>`
+        paiss =='Brasil' ? resultado.innerHTML += '<p>Você é Brasileiro!</p>': resultado.innerHTML += '<p>Você é Estrangeiro!</p>'
+        */
     </script>
 </body>
 </html>
